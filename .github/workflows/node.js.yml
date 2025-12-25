@@ -29,11 +29,11 @@ jobs:
       run: npm i @cucumber/cucumber -D
     - name: Install ts-node
       run: npm i ts-node -D
-    -name: Install Dotenv
-      run: npm i dotenv
-    -name: Install Cucumber Report
+    - name: Install Dotenv
+      run: npm install dotenv
+    - name: Install Cucumber Report
       run: npm i multiple-cucumber-html-reporter -D
-    -name: Insta;; winston
+    - name: Insta;; winston
       run: npm i winston
     - name: run cucumber
       run: npm test
