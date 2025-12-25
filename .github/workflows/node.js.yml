@@ -23,6 +23,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Install npm
+      run: npm install
     - name: Install Playwright
       run: npm init playwright@latest
     - name: Install Playwright Browsers
