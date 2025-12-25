@@ -25,6 +25,8 @@ jobs:
         cache: 'npm'
     - name: Install Playwright
       run: npm init playwright@latest
+    - name: Install Playwright Browsers
+      run: npx playwright install
     - name: Install Cucumber
       run: npm i @cucumber/cucumber -D
     - name: Install ts-node
