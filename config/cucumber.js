@@ -8,7 +8,6 @@ module.exports = {
             "src/test/features/"
         ],
         publishQuiet: true,
-        dryRun: false,
         require: [
             "src/test/steps/*.ts",
             "src/hooks/hooks.ts"
@@ -39,7 +38,7 @@ module.exports = {
             "ts-node/register"
         ],
         format: [
-            "progress-bar",
+            "html:report.html",
             "html:test-results/cucumber-report.html",
             "json:test-results/cucumber-report.json",
             "rerun:@rerun.txt"
